@@ -1,5 +1,5 @@
 # package.json
-I used axios for my http requests. <br/>
+Axios is included as a dependency because it was used for http requests. <br/><br/>
 This line within the file <br/> "homepage": "http://167.172.208.95/quizapp", <br/> configures react's build script. Since in my server files I am forwarding http requests from  <br/> http://167.172.208.95/quizapp <br/> to my server file which recieves them through<br/> app.use('/quizapp', express.static('quizappui/build')),<br/> react has to set up it's build folder so that when a request is sent to quizappui/build the build folder is formated correctly.   
 
 # App.js
