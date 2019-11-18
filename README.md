@@ -1,5 +1,5 @@
 # View now at:
-<a href="http://167.172.208.95/quizapp/">myquizapp<a>
+<a href="http://167.172.208.95/quizapp/">quiz application<a>
 
 # Tests
 There are no tests for this project. This is the most important thing which needs to be added. 
