@@ -1,8 +1,8 @@
 
 
 ## Server Configureation info
-I used nginx to forward incoming requests to my servers
-I used pm2 to run my node applications locally
+I used nginx to forward incoming requests to my servers<br />
+I used pm2 to run my node applications locally<br />
 
 location / {
         proxy_pass http://localhost:****;
@@ -11,7 +11,7 @@ location / {
         proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
-    }
+    }<br />
     location /quizapp {
         proxy_pass http://localhost:****;
         proxy_http_version 1.1;
@@ -19,7 +19,7 @@ location / {
         proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
-    }
+    }<br />
     location /answers {
         proxy_pass http://localhost:****;
         proxy_http_version 1.1;
@@ -39,7 +39,7 @@ CREATE TABLE questions (
     ID int NOT NULL AUTO_INCREMENT,
     question varchar(1024) NOT NULL,
     PRIMARY KEY (ID)
-);
+);<br />
 
 CREATE TABLE answers (
     ID int NOT NULL AUTO_INCREMENT,
@@ -47,7 +47,7 @@ CREATE TABLE answers (
     answer varchar(255) NOT NULL,
 	correct int NOT NULL,
     PRIMARY KEY (ID)
-);
+);<br />
 
 
 INSERT INTO questions (question)
@@ -58,7 +58,7 @@ VALUES
 ('Npm init creates a package.json file in your current directory.'),
 ('The third president of the United States was:'),
 ('O to the n^2 complexity is a good complexity for a sorting algorithm.'),
-('Which of these names is NOT a a real city in Europe:');
+('Which of these names is NOT a a real city in Europe:');<br />
 
 
 INSERT INTO answers (QID, answer, correct)
@@ -88,7 +88,7 @@ VALUES
 (7,'Zerkenstin',1),
 (7,'Geilenkirchen',0),
 (7,'Rottenegg',0),
-(7,'Nasty',0);
+(7,'Nasty',0);<br />
 
 ## Create React App info
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
