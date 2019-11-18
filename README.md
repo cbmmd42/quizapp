@@ -1,4 +1,4 @@
-# View now at:
+# Hyperlink to project:
 <a href="http://167.172.208.95/quizapp/">quiz application<a>
 
 # Tests
