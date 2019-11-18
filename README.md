@@ -1,5 +1,10 @@
-
-
+# package.json
+I used axios for my http requests
+# App.js
+App.js renders either the client's score or the question display.
+# components/question_view.js
+question_view.js gets questions and answers from the database and displays all the answers for each question using axios and javascript's built in array methods.<br/> <br/>
+css is used to hide and reveal buttons
 
 
 ## Create React App info
