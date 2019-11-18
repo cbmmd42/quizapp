@@ -1,8 +1,9 @@
 
 
 ## Server Configureation info
-I used nginx to forward incoming requests to my servers<br />
-I used pm2 to run my node applications locally<br />
+The server which hosts my application runs nginx to forward incoming requests to my express servers<br />
+It also runs pm2 to run my express servers and host my react application locally<br />
+nginx is acting as a reverse proxy<br />
 
 location / {
         proxy_pass http://localhost:****;
