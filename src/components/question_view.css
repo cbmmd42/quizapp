@@ -1,0 +1,60 @@
+.hidden {
+    display:none;    
+}
+
+body {
+    background-color: #282c34;
+    color: white;
+    font-size: 4vmin;
+}
+  
+.questionview {
+      margin: 10vh 10vw 10vh 10vw;
+      box-sizing: border-box;
+      height: 80vh;
+      width: 80vw;
+      padding: 5vh 5vw 5vh 5vw;
+      font-size: auto;
+
+      border:solid 1vw #ff6a00;
+}
+
+  
+#nextBtn {
+    font-family: 'Times New Roman', Times, serif;
+    width: 20vw;
+    height: 6vw;
+    font-size: 3vw;
+    background-color: #ff6a00;
+    border: none;
+    position: absolute;
+    right: 15vw;
+    bottom: 15vh;
+    color:white;
+}
+#previousBtn {
+    font-family: 'Times New Roman', Times, serif;
+    width: 20vw;
+    height: 6vw;
+    font-size: 3vw;
+    background-color: #ff6a00;
+    border: none;
+    position: absolute;
+    left: 15vw;
+    bottom: 15vh;
+    color: white;
+
+}
+
+#finishBtn {
+    font-family: 'Times New Roman', Times, serif;
+    width: 20vw;
+    height: 6vw;
+    font-size: 3vw;
+    background-color: #ff6a00;
+    border: none;
+    position: absolute;
+    right: 15vw;
+    bottom: 15vh;
+    color: white;
+}
