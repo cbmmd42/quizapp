@@ -2,7 +2,7 @@
 <a href="http://167.172.208.95/quizapp/">quiz application<a>
 
 # Tests
-There are no tests for this project. This is the most important thing which needs to be added. 
+There are no tests for this project. This is the most important thing which needs to be added. Jest seems to be a good option.
 
 # package.json
 Axios is included as a dependency because it was used for http requests. <br/><br/>
@@ -14,6 +14,7 @@ App.js renders either the client's score or the question display.
 # components/question_view.js
 question_view.js gets questions and answers from the database and displays all the answers for each question using axios and javascript's built in array methods.<br/> <br/>
 css is used to hide and reveal buttons
+
 
 
 ## Create React App info
