@@ -1,39 +1,12 @@
 import React from 'react';
 import axios from 'axios';
 import './question_view.css';
-
-var removeChecks = (classname) => {
-  var objects = document.getElementsByClassName(classname); // 
-  var i = 0;
-  for(i = 0; i < objects.length; i++){ //i ended up with a bug where the radio buttons would remain checked
-    objects[i].checked = false;
-  }
-}
-
-var addandremovebtns = (current,size) => {
-  var endoflist = (current == size);
-  if(endoflist){
-    document.getElementById('finishBtn').classList.remove('hidden');
-    document.getElementById('nextBtn').classList.add('hidden');    
-  }
-  
-  if(!endoflist){
-    document.getElementById('finishBtn').classList.add('hidden');
-    document.getElementById('nextBtn').classList.remove('hidden');
-  }
-  
-}
+import removeChecks from './removeChecks';
+import addandremovebtns from './addandremovebtns';
+import Answer from './answer';
 
 var calculateCorrect = (selectedAnswers) =>{
   return selectedAnswers.reduce((a,b) => parseInt(a)+parseInt(b),0);
-}
-
-class Answer {
-  constructor(QID,answer,correct){
-    this.QID = QID;
-    this.answer = answer;
-    this.correct = correct;
-  }
 }
 
 class QuestionView extends React.Component {
