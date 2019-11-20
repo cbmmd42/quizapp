@@ -42,7 +42,7 @@ class App extends React.Component {
         <p>You got a score of {findpercentage(this.state.correct,this.state.total)}</p>
         <button className="button" onClick={this.retry}>Retry</button>
         <button className="button" 
-        onClick={()=> {window.location.href = ' https://cbmmd42.github.io/myFirstWebsite/index.html'}}>Home</button>
+        onClick={()=> {window.location.href = ' https://michaelgjohnson.com'}}>Home</button>
         </div>
     }
     return(

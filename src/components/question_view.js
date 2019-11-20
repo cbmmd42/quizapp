@@ -22,12 +22,12 @@ class QuestionView extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://167.172.208.95/api/questions`).then(res => {
+    axios.get(`https://www.michaelgjohnson.com/api/questions`).then(res => {
       var questions = res.data.map(data => data.question );
       this.setState({questions: questions})
     });
     
-    axios.get(`http://167.172.208.95/api/answers`).then(res => {
+    axios.get(`https://www.michaelgjohnson.com/api/answers`).then(res => {
       var answers = res.data.map(data => new Answer(data.QID,data.answer,data.correct) );
       this.setState({answers: answers});
     });
